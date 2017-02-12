@@ -1,0 +1,14 @@
+html
+  include partials/head.jade
+
+body
+include partials/nav.jade
+include partials/headline.jade
+  div(align='center')
+    .container
+      .row
+       -for(var i=0;i<imageCount; i++)
+        .col-md-6
+          .thumbnail
+            img(src='/images/' + city + '/' + city + '-' + (i+1) +'.jpg') 
+include partials/jsscripts.jade
